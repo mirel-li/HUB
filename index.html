@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Хаб</title>
+<style>
+  :root{
+    --paper:#EDEAE4;
+    --ink:#1C1B19;
+    --line:#B8B2A6;
+    --grey:#6E6A62;
+    --typewriter-red:#7A2E2E;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Courier New', Courier, monospace;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,0.015) 0px, transparent 1px, transparent 2px);
+    opacity:.6;
+  }
+  header{
+    padding:72px 24px 24px;
+    max-width:720px;
+    margin:0 auto;
+    text-align:center;
+  }
+  header .eyebrow{
+    font-size:11px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--grey);
+    margin:0 0 18px;
+  }
+  h1{
+    font-family:'Georgia','Times New Roman',serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:46px;
+    margin:0;
+    letter-spacing:.01em;
+    color:var(--ink);
+  }
+  .rule{
+    font-family:'Georgia','Times New Roman',serif;
+    font-style:italic;
+    font-size:13px;
+    color:var(--grey);
+    margin:22px auto 0;
+    letter-spacing:.03em;
+  }
+  main{
+    max-width:680px;
+    margin:0 auto;
+    padding:8px 24px 100px;
+  }
+  .list{
+    border-top:1px dashed var(--line);
+  }
+  .item{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:24px;
+    padding:22px 4px;
+    border-bottom:1px dashed var(--line);
+    text-decoration:none;
+    color:var(--ink);
+    transition:opacity .2s ease, padding-left .2s ease;
+  }
+  .item:hover{
+    opacity:.55;
+    padding-left:10px;
+  }
+  .item:focus-visible{
+    outline:1px solid var(--typewriter-red);
+    outline-offset:4px;
+  }
+  .item-index{
+    font-size:12px;
+    color:var(--grey);
+    width:24px;
+    flex-shrink:0;
+  }
+  .item-name{
+    font-family:'Georgia','Times New Roman',serif;
+    font-size:19px;
+    flex:1;
+  }
+  .item-row{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+  }
+  footer{
+    max-width:680px;
+    margin:0 auto;
+    padding:0 24px 64px;
+    font-size:11px;
+    color:var(--grey);
+    text-align:center;
+    letter-spacing:.04em;
+  }
+  @media (max-width:560px){
+    h1{font-size:34px;}
+    .item-name{font-size:17px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">An archive of small obsessions</p>
+  <h1>Хаб</h1>
+  <p class="rule">— всё это случилось, и ничего не пропало —</p>
+</header>
+
+<main>
+  <nav class="list">
+    <a class="item" href="https://username.github.io/150-dates/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">01</span><span class="item-name">150 свиданий</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/dasha-tracker/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">02</span><span class="item-name">Трекер Даша</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/dania-tracker/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">03</span><span class="item-name">Трекер Даня</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/dasha-planner/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">04</span><span class="item-name">Планер Даша</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/dania-planner/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">05</span><span class="item-name">Планер Даня</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/dasha-project-planner/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">06</span><span class="item-name">Проектный планер Даша</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/menu/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">07</span><span class="item-name">Меню</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/checklist-series/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">08</span><span class="item-name">Чек-лист Сериалы</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/checklist-movies/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">09</span><span class="item-name">Чек-лист Фильмы</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/checklist-disney/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">10</span><span class="item-name">Чек-лист Дисней</span></span>
+    </a>
+    <a class="item" href="https://username.github.io/checklist-genshin/" target="_blank" rel="noopener">
+      <span class="item-row"><span class="item-index">11</span><span class="item-name">Чек-лист Геншин</span></span>
+    </a>
+  </nav>
+</main>
+
+<footer>
+  все записи живут в одном доме — открывай и закрывай не глядя
+</footer>
+
+</body>
+</html>
